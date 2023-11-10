@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null;
+}
+@model Webuser.Models.Usuario
+@{
+    var esCumple = DateTime.Today.Date == Model.FechaNacimiento.Date;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+	<nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
+		<div class="[ container ]">
+			<div class="[ navbar-header ]">
+				<div class="[ animbrand ]">
+					<a class="[ navbar-brand ][ animate ]" href="@Url.Action("Usuario", "Web", Model)">MIDWAY</a>
+				</div>
+			</div>
+			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+				<ul class="[ nav navbar-nav navbar-right ]">
+					<li><a class="animate" href="@Url.Action("Usuario", "Web", Model)">Usuario</a></li>
+					<li><a class="animate" href="@Url.Action("Jerarquia", "Web", Model)">Jerarquia</a></li>
+					<li class="[ hidden-xs ]"><a asp-controller="Web" asp-action="Logout" class="[ animate ]"><span class="[ glyphicon glyphicon-off ]"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <div class="usuario-details">
+        <h1>@Model.Nombre @Model.Apellidos</h1>
+        <p>Correo: @Model.Correo</p>
+        <p>Fecha de Nacimiento: @Model.FechaNacimiento.ToString("dd/MM/yyyy")</p>
+
+        @if (esCumple)
+        {
+			<div class="cumple-message">
+                <p>🎉🎉 ¡Feliz cumpleaños, @Model.Nombre! 🎉🎉</p>
+            </div>
+        }
+    </div>
+</body>
+</html>

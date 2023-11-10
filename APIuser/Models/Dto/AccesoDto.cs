@@ -1,0 +1,12 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace APIuser.Models.Dto
+{
+    public class AccesoDto
+    {
+        [Required]
+        public string Correo { get; set; }
+        [Required]
+        public string Clave { get; set; }
+    }
+}

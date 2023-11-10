@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus/connectors/sqlConexion_2E9EA23798",
+      "secretStore": "AzureKeyVault",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ptservice/databases/BDU",
+      "type": "mssql.azure",
+      "connectionId": "sqlConexion"
+    },
+    "apis1": {
+      "ignored": "True",
+      "type": "apis"
+    },
+    "secrets1": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/APIuservault",
+      "type": "secrets.keyVault",
+      "connectionId": "VaultConexion"
+    }
+  }
+}

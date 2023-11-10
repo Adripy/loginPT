@@ -1,0 +1,266 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #ffffff !important;
+}
+
+.usuario-details {
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center; /* Alinea el texto al centro dentro del contenedor */
+}
+
+    .usuario-details h1 {
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .usuario-details p {
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-top: 5px; /* Agrega un pequeño margen superior para separar los párrafos */
+    }
+
+.cumple-message {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cumple-message p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.user_card {
+    height: 325px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #74bd43;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #353433;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.form_container {
+    margin-top: 100px;
+}
+
+.login_btn {
+    width: 100%;
+    background: #353433 !important;
+    color: white !important;
+}
+
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.login_container {
+    padding: 0 2rem;
+}
+
+.input-group-text {
+    background: #353433 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #ffffff !important;
+}
+
+.tree-container {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 5%;
+}
+.example .tf-nc {
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+.tf-custom .tf-nc:before,
+.tf-custom .tf-nc:after {
+
+}
+
+.tf-custom li li:before {
+
+}
+
+.has-birthday {
+    background-color: #74bd43;
+    color: white;
+}
+
+.no-birthday {
+    background-color: #c8c4c4;
+    color: #353433;
+}
+
+.animate {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-bootsnipp {
+    background-color: #ffffff;
+    border-color: #74bd43;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    z-index: 100;
+}
+
+    .navbar-bootsnipp:nth-of-type(2) {
+        border-top-width: 1px;
+        z-index: 50
+    }
+
+    .navbar-bootsnipp.affix-top {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+
+    .navbar-bootsnipp.affix {
+        top: 0px;
+        width: 100%;
+    }
+
+    .navbar-bootsnipp .navbar-toggle .icon-bar {
+        background-color: #74bd43;
+    }
+
+    .navbar-bootsnipp .navbar-brand {
+        color: #74bd43;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    .navbar-bootsnipp .navbar-nav > li > a {
+        border: 0px solid #74bd43;
+        color: #74bd43;
+        padding: 15px 14px;
+    }
+
+    .navbar-bootsnipp .navbar-nav > li > form > .input-group > input,
+    .navbar-bootsnipp .navbar-nav > li > form > .input-group > .input-group-btn > .btn {
+        border-radius: 0px;
+    }
+
+    .navbar-bootsnipp .navbar-nav > li:not(.disabled).open > a,
+    .navbar-bootsnipp .navbar-nav > li:not(.disabled).active > a,
+    .navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:hover,
+    .navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:focus {
+        border-left-width: 5px;
+        color: #74bd43;
+        padding-left: 10px;
+    }
+
+    .navbar-bootsnipp .navbar-nav > li.disabled > a {
+        color: #74bd43;
+    }
+
+.navbar .bootsnipp-profile > a {
+    padding-bottom: 9px;
+    padding-top: 9px;
+}
+
+    .navbar .bootsnipp-profile > a > img {
+        border-radius: 50%;
+        width: 32px;
+    }
+
+
+.navbar-bootsnipp .bootsnipp-search {
+    display: none;
+}
+
+    .navbar-bootsnipp .bootsnipp-search .form-control {
+        background-color: #74bd43;
+        border-radius: 0px;
+        border-width: 0px;
+        font-size: 24px;
+        padding: 30px 0px;
+    }
+
+    .navbar-bootsnipp .bootsnipp-search .form-control {
+        background-color: #74bd43;
+        border-radius: 0px;
+        border-width: 0px;
+        font-size: 24px;
+        padding: 25px 0px;
+    }
+
+        .navbar-bootsnipp .bootsnipp-search .form-control:focus {
+            border-color: transparent;
+            outline: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+    .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn {
+        padding: 14px 16px;
+        border-radius: 0px;
+    }
+
+        .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn.active,
+        .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:hover,
+        .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:focus {
+            padding: 14px 16px 14px 15px;
+        }
+
+    .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn-default {
+        background-color: #74bd43;
+    }
+
+.nav-padding {
+    padding-top: 61px;
+}

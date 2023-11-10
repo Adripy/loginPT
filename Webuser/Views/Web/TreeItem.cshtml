@@ -1,0 +1,23 @@
+﻿@model Webuser.Models.Dto.UsuarioTreeDto
+
+<li>
+    <span class="tf-nc @(Model.esCumple ? "has-birthday" : "no-birthday")">
+        @Model.Nombre<br>
+        @Model.Apellidos<br>
+        @Model.Correo<br>
+        @Model.FechaNacimiento.ToShortDateString()
+    </span>
+    @if (Model.Subordinados != null && Model.Subordinados.Any())
+    {
+        <ul>
+            @foreach (var subordinate in Model.Subordinados)
+            {
+                <partial name="TreeItem" model="subordinate" />
+            }
+        </ul>
+    }
+</li>
+
+
+
+
